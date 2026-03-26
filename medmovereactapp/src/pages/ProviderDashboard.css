@@ -1,0 +1,143 @@
+.dashboard-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+  font-family: 'Inter', sans-serif;
+}
+
+.dashboard-nav {
+  background: white;
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-logo {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #b71c1c;
+}
+
+.nav-user {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.logout-btn {
+  background: #f5f5f5;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #666;
+  transition: all 0.3s;
+}
+
+.logout-btn:hover {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.dashboard-main {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 20px;
+}
+
+.tab-menu {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.tab-menu button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #666;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.tab-menu button.active {
+  color: #b71c1c;
+}
+
+.tab-menu button.active::after {
+  content: '';
+  position: absolute;
+  bottom: -0.6rem;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background: #b71c1c;
+  border-radius: 2px;
+}
+
+.badge {
+  background: #b71c1c;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 10px;
+  font-size: 0.7rem;
+  margin-left: 5px;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.add-btn {
+  background: linear-gradient(45deg, #b71c1c, #d32f2f);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(183, 28, 28, 0.3);
+  transition: transform 0.3s;
+}
+
+.add-btn:hover {
+  transform: translateY(-2px);
+}
+
+.loading, .empty {
+  text-align: center;
+  padding: 3rem;
+  color: #666;
+  font-style: italic;
+}
+
+.ambulance-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+.earnings-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.earnings-card h3 { color: #666; margin-bottom: 0.5rem; }
+.amount { font-size: 2.5rem; font-weight: 800; color: #b71c1c; margin: 0; }
+.earnings-details { margin-top: 1rem; color: #888; font-size: 0.9rem; }

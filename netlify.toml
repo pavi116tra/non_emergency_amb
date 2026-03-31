@@ -1,0 +1,9 @@
+[build]
+  base    = "medmovereactapp"
+  command = "npm run build"
+  publish = "medmovereactapp/build"
+
+[[redirects]]
+  from   = "/*"
+  to     = "/index.html"
+  status = 200
